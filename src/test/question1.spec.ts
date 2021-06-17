@@ -1,17 +1,18 @@
-import { addComma } from '../question1'
-import { assert } from 'chai'
-
-describe('add Comma test case', () =>{
-    it('addComma(1234567) should be 1,234,567', () =>{
-        assert.equal(addComma('1234567'), '1,234,567')
-    })
-    it('addComma(-1234567) should be -1,234,567', () =>{
-        assert.equal(addComma('-1234567'), '-1,234,567')
-    })
-    it('addComma(1234567.12345) should be 1,234,567.12345', () =>{
-        assert.equal(addComma('1234567.12345'), '1,234,567.12345')
-    })
-})
+import {addComma} from '../question1';
+(() => {
+  const {assert} = require('chai');
+  describe('add Comma test case', () => {
+    it('addComma(1234567) should be 1,234,567', () => {
+      assert.equal(addComma('1234567'), '1,234,567');
+    });
+    it('addComma(-1234567) should be -1,234,567', () => {
+      assert.equal(addComma('-1234567'), '-1,234,567');
+    });
+    it('addComma(1234567.12345) should be 1,234,567.12345', () => {
+      assert.equal(addComma('1234567.12345'), '1,234,567.12345');
+    });
+  });
+})();
 
 // import solution = require('./solution');
 // // import the type of assertion library you wish to use (Chai recommended)
@@ -24,4 +25,3 @@ describe('add Comma test case', () =>{
 //     assert.equal(solution.solution('abc', ''), true);
 //   });
 // });
-
